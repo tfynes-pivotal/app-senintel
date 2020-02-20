@@ -24,4 +24,5 @@ Issues
 
 Currently it's cleanly responding when the request is only asking for http headers
 e.g. curl -I <sentinel-address>
+  but the connection tear-down semantics are not fully working for a full-page request.
 
