@@ -1,0 +1,10 @@
+---
+applications:
+- name: app-sentinel
+  buildpacks:
+    - binary_buildpack
+  command: /home/vcap/app/sentinel.sh
+  memory: 16M
+  disk_quota: 16M
+  env:
+     TARGET_HOSTS: <url1>,<url2>,<url3>....
