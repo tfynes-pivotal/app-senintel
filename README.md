@@ -1,4 +1,4 @@
-# app-senintel
+# app-sentinel
 Create a single composite layer7 healthcheck endpoint for multiple apps
 
 Introduction
