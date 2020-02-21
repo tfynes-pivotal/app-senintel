@@ -24,14 +24,14 @@ Provide comma delimited list of target hosts in the TARGET_HOSTS env variable
 
 Demo Scenario
 Test client loop using bash / curl
-
+`
   while true; do echo && sleep 1 && curl -s -o /dev/null -I -w "%{http_code}" https://app-sentinel.cfapps.io; done
-  
+`  
 update manifest file to initialize TARGET_HOSTS environment to point to comma delimited list of live endpoints and update app-sentinel application name as necessary:
 
 e.g.
 ---
-'''
+`
 applications:
 - name: app-sentinel
   buildpacks:
@@ -41,10 +41,10 @@ applications:
   disk_quota: 16M
   env:
      TARGET_HOSTS: https://pcfshell.cfapps.io,https://appmedictest.cfapps.io
-'''     
+`     
 
 Observe your curl client loop reporting status 200 as all endpoints along with app-sentinel are running.
-'cf stop <app1>'
+`'cf stop <app1>'`
 Observe how your app-sentinel is now reporting a 404 (which a GTM could use to steer traffic to an alternative region)
 
 
