@@ -22,9 +22,4 @@ Directions
 Modify manifest to provide app-sentinel with a unique name / route
 Provide comma delimited list of target hosts in the TARGET_HOSTS env variable
 
-Issues
-
-Currently it's cleanly responding when the request is only asking for http headers
-e.g. curl -I <sentinel-address>
-  but the connection tear-down semantics are not fully working for a full-page request.
 
