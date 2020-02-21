@@ -24,6 +24,7 @@ Provide comma delimited list of target hosts in the TARGET_HOSTS env variable
 
 Demo Scenario
 Test client loop using bash / curl
+
   while true; do echo && sleep 1 && curl -s -o /dev/null -I -w "%{http_code}" https://app-sentinel.cfapps.io; done
   
 update manifest file to initialize TARGET_HOSTS environment to point to comma delimited list of live endpoints and update app-sentinel application name as necessary:
