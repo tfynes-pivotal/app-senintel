@@ -9,7 +9,7 @@ When using a global traffic manager (GTM) to provide multi-region URL for micros
 
 The PCF/TAS platform natively support HTTP / Layer7 health-checking for hosted applciations but a healthcheck-per-microservice could result in a partial failover of some microservices to an alternative region. 
 
-The solution is to have a single composite healthcheck endpoint that asserts in one response that all local microservices' endpoints healthy
+The solution is to have a single composite healthcheck endpoint that asserts in one response that all local microservices' endpoints are healthy
 
 
 How it works
