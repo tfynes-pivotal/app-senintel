@@ -31,6 +31,7 @@ update manifest file to initialize TARGET_HOSTS environment to point to comma de
 
 e.g.
 ---
+'''
 applications:
 - name: app-sentinel
   buildpacks:
@@ -40,7 +41,7 @@ applications:
   disk_quota: 16M
   env:
      TARGET_HOSTS: https://pcfshell.cfapps.io,https://appmedictest.cfapps.io
-     
+'''     
 
 Observe your curl client loop reporting status 200 as all endpoints along with app-sentinel are running.
 'cf stop <app1>'
